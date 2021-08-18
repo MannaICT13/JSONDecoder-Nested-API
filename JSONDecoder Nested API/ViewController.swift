@@ -9,9 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var users = [Users]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        JSONHandler.instance.setupJsonHandler { (users) in
+            self.users = users
+        }
+        
+    
+      
     }
 
 

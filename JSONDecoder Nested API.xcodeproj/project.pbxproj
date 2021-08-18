@@ -13,6 +13,8 @@
 		17D97A9126CBAA3D00910459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D97A8F26CBAA3D00910459 /* Main.storyboard */; };
 		17D97A9326CBAA3F00910459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D97A9226CBAA3F00910459 /* Assets.xcassets */; };
 		17D97A9626CBAA3F00910459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D97A9426CBAA3F00910459 /* LaunchScreen.storyboard */; };
+		17D97AA126CBAAAF00910459 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D97AA026CBAAAF00910459 /* Users.swift */; };
+		17D97AA426CBADF900910459 /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D97AA326CBADF900910459 /* JSONHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		17D97A9226CBAA3F00910459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17D97A9526CBAA3F00910459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17D97A9726CBAA3F00910459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17D97AA026CBAAAF00910459 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		17D97AA326CBADF900910459 /* JSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			children = (
 				17D97A8826CBAA3D00910459 /* JSONDecoder Nested API */,
 				17D97A8726CBAA3D00910459 /* Products */,
+				17D97AD126CBC88500910459 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +61,8 @@
 		17D97A8826CBAA3D00910459 /* JSONDecoder Nested API */ = {
 			isa = PBXGroup;
 			children = (
+				17D97A9F26CBAA9A00910459 /* Handler */,
+				17D97A9E26CBAA9400910459 /* Model */,
 				17D97A8926CBAA3D00910459 /* AppDelegate.swift */,
 				17D97A8B26CBAA3D00910459 /* SceneDelegate.swift */,
 				17D97A8D26CBAA3D00910459 /* ViewController.swift */,
@@ -65,6 +72,29 @@
 				17D97A9726CBAA3F00910459 /* Info.plist */,
 			);
 			path = "JSONDecoder Nested API";
+			sourceTree = "<group>";
+		};
+		17D97A9E26CBAA9400910459 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17D97AA026CBAAAF00910459 /* Users.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17D97A9F26CBAA9A00910459 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				17D97AA326CBADF900910459 /* JSONHandler.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		17D97AD126CBC88500910459 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D97AA126CBAAAF00910459 /* Users.swift in Sources */,
+				17D97AA426CBADF900910459 /* JSONHandler.swift in Sources */,
 				17D97A8E26CBAA3D00910459 /* ViewController.swift in Sources */,
 				17D97A8A26CBAA3D00910459 /* AppDelegate.swift in Sources */,
 				17D97A8C26CBAA3D00910459 /* SceneDelegate.swift in Sources */,
@@ -296,6 +328,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -314,6 +347,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
